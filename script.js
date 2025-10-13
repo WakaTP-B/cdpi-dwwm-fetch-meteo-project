@@ -1,10 +1,20 @@
+function main() {
 
+    const search = document.querySelector('.search-bar');
+    const cityInput = document.querySelector('.city');
 
-function main(){
-    console.log("Hello meteo !");
+    if (search) {
+        search.addEventListener('submit', e => {
+            e.preventDefault();
 
+        });
+    }
 }
 main();
+
+function searchCity (){
+    
+}
 
 
 
@@ -13,6 +23,6 @@ main();
  * 
  * @param {*} position_obj 
  */
-function onPosition(position_obj){
+function onPosition(position_obj) {
 
 }
