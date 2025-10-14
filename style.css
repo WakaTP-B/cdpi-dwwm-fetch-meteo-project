@@ -1,7 +1,110 @@
 /* ALL */
 /* border: solid 1px black; */
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #0a4b9c, #39c0b5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.display-icon i {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+.weather-icon {
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+/* Couleurs par temps et jour/nuit */
+.sun {
+    color: #ffd43b;
+}
+
+.partly-cloudy {
+    color: #ffe58f;
+}
+
+.cloudy {
+    color: #a0a0a0;
+}
+
+.fog {
+    color: #b0b0b0;
+}
+
+.rain {
+    color: #4da6ff;
+}
+
+.showers {
+    color: #3399ff;
+}
+
+.snow {
+    color: #ffffff;
+}
+
+.thunder {
+    color: #ffcc00;
+}
+
+.default-weather {
+    color: #ffd43b;
+}
+
+
+/* Couleur nuit */
+.sun-night {
+    color: #f5d76e;
+}
+
+.partly-cloudy-night {
+    color: #b0b3c0;
+}
+
+.cloudy-night {
+    color: #555a66;
+}
+
+.fog-night {
+    color: #666c75;
+}
+
+.rain-night {
+    color: #336699;
+}
+
+.showers-night {
+    color: #224466;
+}
+
+.snow-night {
+    color: #cfd8dc;
+}
+
+.thunder-night {
+    color: #cc9900;
+}
+
+.default-weather-night {
+    color: #999966;
+}
