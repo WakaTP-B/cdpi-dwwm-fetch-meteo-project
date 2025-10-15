@@ -1,19 +1,84 @@
 /* ALL */
-/* border: solid 1px black; */
 * {
+    /* border: solid 1px black; */
     margin: 0;
     padding: 0;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, #0a4b9c, #39c0b5);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
+}
+
+/* Search */
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barre de recherche ville */
+.city-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.city-search input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.city-search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.city-search i {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* Latitude / Longitude */
+.coords-search {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 250px;
+}
+
+.coords-search input {
+    flex: 1;
+    min-width: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: white;
+    outline: none;
+    font-size: 0.9rem;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+.coords-search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .display-weather {
@@ -22,16 +87,20 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 2rem;
+    margin-top: 18px;
+    text-align: center;
 }
 
-.display-icon i {
-    font-size: 4rem;
+/* icônes météo */
+.display-icon i,
+.weather-icon {
+    font-size: clamp(2.6rem, 6vw, 4rem);
     margin: 10px 0;
 }
 
-.weather-icon {
-    font-size: 4rem;
-    margin-top: 10px;
+.find-me {
+    margin-top: 18px;
+    text-align: center;
 }
 
 /* Couleurs par temps et jour/nuit */
