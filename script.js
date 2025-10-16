@@ -22,6 +22,7 @@ function main() {
         });
     }
 }
+
 main();
 
 // Recherche par ville
